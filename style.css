@@ -105,7 +105,7 @@ main{
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color: #46A2FD;
+    color: #46A2FDaa;
     ;
 }
 
@@ -114,7 +114,7 @@ main{
     margin-top: 20px;
     padding: 10px;
     border: none;
-    background: #46A2FD;
+    background: #c0bfbf;
     font-size: 16px;
     outline: none;
 }
