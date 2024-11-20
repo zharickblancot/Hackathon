@@ -36,8 +36,8 @@ main{
     justify-content: center;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgba(2, 75, 101, 0.8); /* Añadí el valor de opacidad */
-    border-radius: 15px; /* Esquinas redondeadas */
+    background-color: rgba(2, 75, 101, 0.8); 
+    border-radius: 15px; 
 }
 
 
@@ -130,6 +130,7 @@ main{
     cursor: pointer;
     color: white;
     outline: none;
+    border-radius: 12px;
 }
 
 
