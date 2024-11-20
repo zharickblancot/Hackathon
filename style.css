@@ -1,74 +1,64 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    color: #333;
 }
 
-.contenedor-formulario {
-    background: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    width: 100%;
+.login-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
+    width: 300px;
 }
 
-.contenedor-formulario h1 {
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: #333;
+.login-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
 
-.campo {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.campo label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #333;
-}
-
-.campo input, .campo textarea {
+.login-container input {
     width: 100%;
     padding: 10px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
-    transition: border-color 0.3s;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.campo input:focus, .campo textarea:focus {
-    border-color: #71b7e6;
-    outline: none;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    background: #71b7e6;
+.login-container button {
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
 }
 
-button:hover {
-    background: #9b59b6;
-    transform: scale(1.05);
+.login-container button:hover {
+    background-color: #45a049;
 }
 
-button:active {
-    transform: scale(1);
+.login-container a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 0.9rem;
+}
+
+.login-container .donation-text {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.login-container .signup {
+    margin-top: 1rem;
+    font-size: 0.9rem;
 }
