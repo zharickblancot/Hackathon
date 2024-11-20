@@ -29,16 +29,17 @@ main{
     position: relative;
 }
 
-.caja__trasera{
+.caja__trasera {
     width: 100%;
     padding: 10px 20px;
     display: flex;
     justify-content: center;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgba(2, 75, 101);
-
+    background-color: rgba(2, 75, 101, 0.8); /* Añadí el valor de opacidad */
+    border-radius: 15px; /* Esquinas redondeadas */
 }
+
 
 .caja__trasera div{
     margin: 100px 40px;
