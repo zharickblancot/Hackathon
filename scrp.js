@@ -1,27 +1,64 @@
-// Seleccionar elementos del DOM
-const loginButton = document.querySelector("button");
-const usernameInput = document.querySelector("input[type='text']");
-const passwordInput = document.querySelector("input[type='password']");
+//Ejecutando funciones
+document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
+document.getElementById("btn__registrarse").addEventListener("click", register);
+window.addEventListener("resize", anchoPage);
 
-// Evento para manejar el botón de login
-loginButton.addEventListener("click", (event) => {
-    event.preventDefault(); // Evitar el comportamiento predeterminado del botón
-    const username = usernameInput.value.trim();
-    const password = passwordInput.value.trim();
+//Declarando variables
+var formulario_login = document.querySelector(".formulario__login");
+var formulario_register = document.querySelector(".formulario__register");
+var contenedor_login_register = document.querySelector(".contenedor__login-register");
+var caja_trasera_login = document.querySelector(".caja__trasera-login");
+var caja_trasera_register = document.querySelector(".caja__trasera-register");
 
-    if (username === "" || password === "") {
-        alert("Por favor, complete todos los campos.");
-    } else {
-        // Simular inicio de sesión
-        console.log(`Usuario: ${username}, Contraseña: ${password}`);
-        alert("Inicio de sesión exitoso!");
-        // Aquí podrías redirigir al usuario o hacer una solicitud a un servidor
+    //FUNCIONES
+
+function anchoPage(){
+
+    if (window.innerWidth > 850){
+        caja_trasera_register.style.display = "block";
+        caja_trasera_login.style.display = "block";
+    }else{
+        caja_trasera_register.style.display = "block";
+        caja_trasera_register.style.opacity = "1";
+        caja_trasera_login.style.display = "none";
+        formulario_login.style.display = "block";
+        contenedor_login_register.style.left = "0px";
+        formulario_register.style.display = "none";   
     }
-});
+}
 
-// Manejar enlace "Forgot Password"
-const forgotPasswordLink = document.querySelector("a[href='#']");
-forgotPasswordLink.addEventListener("click", (event) => {
-    event.preventDefault();
-    alert("Función de recuperación de contraseña no implementada.");
-});
+anchoPage();
+
+
+    function iniciarSesion(){
+        if (window.innerWidth > 850){
+            formulario_login.style.display = "block";
+            contenedor_login_register.style.left = "10px";
+            formulario_register.style.display = "none";
+            caja_trasera_register.style.opacity = "1";
+            caja_trasera_login.style.opacity = "0";
+        }else{
+            formulario_login.style.display = "block";
+            contenedor_login_register.style.left = "0px";
+            formulario_register.style.display = "none";
+            caja_trasera_register.style.display = "block";
+            caja_trasera_login.style.display = "none";
+        }
+    }
+
+    function register(){
+        if (window.innerWidth > 850){
+            formulario_register.style.display = "block";
+            contenedor_login_register.style.left = "410px";
+            formulario_login.style.display = "none";
+            caja_trasera_register.style.opacity = "0";
+            caja_trasera_login.style.opacity = "1";
+        }else{
+            formulario_register.style.display = "block";
+            contenedor_login_register.style.left = "0px";
+            formulario_login.style.display = "none";
+            caja_trasera_register.style.display = "none";
+            caja_trasera_login.style.display = "block";
+            caja_trasera_login.style.opacity = "1";
+        }
+}
