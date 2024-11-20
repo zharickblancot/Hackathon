@@ -42,7 +42,7 @@ main{
 
 .caja__trasera div{
     margin: 100px 40px;
-    color: rgb(26, 0, 141);
+    color: rgb(1, 145, 187);
     transition: all 500ms;
 }
 
@@ -124,7 +124,7 @@ main{
     margin-top: 40px;
     border: none;
     font-size: 14px;
-    background: #46A2FD;
+    background: #0057ad;
     font-weight: 600;
     cursor: pointer;
     color: white;
