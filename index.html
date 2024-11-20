@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Bonito</title>
+    <title>Formulario de Donaciones</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="contenedor-formulario">
-        <form id="contactForm">
-            <h1>Contáctanos</h1>
+        <form id="donationForm">
+            <h1>Haz tu Donación</h1>
             <div class="campo">
                 <label for="name">Nombre</label>
                 <input type="text" id="name" name="name" required>
@@ -19,10 +19,14 @@
                 <input type="email" id="email" name="email" required>
             </div>
             <div class="campo">
+                <label for="amount">Monto de la Donación</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+            <div class="campo">
                 <label for="message">Mensaje</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
             </div>
-            <button type="submit">Enviar</button>
+            <button type="submit">Donar</button>
         </form>
     </div>
     <script src="scripts.js"></script>

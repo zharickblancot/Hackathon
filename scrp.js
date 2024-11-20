@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
+    document.getElementById('donationForm').addEventListener('submit', function(e) {
         e.preventDefault();
-        alert('Formulario enviado con éxito!');
+        alert('¡Gracias por tu donación!');
     });
 
     const inputs = document.querySelectorAll('input, textarea');
